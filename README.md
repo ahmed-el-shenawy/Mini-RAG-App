@@ -24,7 +24,6 @@ This project demonstrates how to combine **embeddings**, **vector search**, and 
 ## 🛠 Installation with Miniconda
 ### 1. Install Miniconda (Ubuntu/Linux)
 ```bash
-
 cd ~
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
@@ -38,16 +37,17 @@ source ~/.bashrc
 
 ### 2. Create a conda environment
 ```bash
-
 conda create -n mini-rag-app python=3.12.3 -y
 ```
 ### 3. Activate the environment
 ```bash
-
 conda activate mini-rag-app
 ```
 ### 4. Install project dependencies
 ```bash
-
 pip install -r requirements.txt
+```
+## 🎨 (Optional) Customize the Terminal Prompt
+```bash
+export PS1='$(if [ -n "$CONDA_DEFAULT_ENV" ]; then echo -n "(\[\e[1;33m\]$CONDA_DEFAULT_ENV\[\e[0m\]) "; fi)\[\e[1;32m\]\u@\h\[\e[0m\]:\[\e[1;34m\]\w\[\e[0m\]\n$ '
 ```
