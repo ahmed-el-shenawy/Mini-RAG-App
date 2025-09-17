@@ -6,7 +6,7 @@ This project demonstrates how to combine **embeddings**, **vector search**, and 
 ---
 
 ## 🚀 Features
-- Ingest and preprocess text documents
+- Ingest and preprocess your data
 - Generate embeddings using state-of-the-art models
 - Store vectors in a local vector database
 - Retrieve relevant chunks for a given query
@@ -22,19 +22,27 @@ This project demonstrates how to combine **embeddings**, **vector search**, and 
 ---
 
 ## 🛠 Installation with Miniconda
-
+### 1. Install Miniconda (Ubuntu/Linux)
 ```bash
-# 1. Install Miniconda (Ubuntu/Linux)
+
 cd ~
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 source ~/.bashrc
 
-# 2. Create a conda environment
+```
+### 2. Create a conda environment
+```bash
+
 conda create -n mini-rag-app python=3.12.3 -y
+```
+### 3. Activate the environment
+```bash
 
-# 3. Activate the environment
 conda activate mini-rag-app
+```
+### 4. Install project dependencies
+```bash
 
-# 4. Install project dependencies
 pip install -r requirements.txt
+```
