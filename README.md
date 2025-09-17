@@ -35,6 +35,10 @@ source ~/.bashrc
 - Then install Miniconda inside WSL using the Linux instructions above.
 - 🎥 Helpful video: [Install Miniconda on Windows with WSL](https://www.youtube.com/watch?v=ujKNOYKi88A)
 
+### 🎨 (Optional) Customize the Terminal Prompt
+```bash
+export PS1='$(if [ -n "$CONDA_DEFAULT_ENV" ]; then echo -n "(\[\e[1;33m\]$CONDA_DEFAULT_ENV\[\e[0m\]) "; fi)\[\e[1;32m\]\u@\h\[\e[0m\]:\[\e[1;34m\]\w\[\e[0m\]\n$ '
+```
 ### 2. Create a conda environment
 ```bash
 conda create -n mini-rag-app python=3.12.3 -y
@@ -47,7 +51,8 @@ conda activate mini-rag-app
 ```bash
 pip install -r requirements.txt
 ```
-## 🎨 (Optional) Customize the Terminal Prompt
+### 5. Setup the environment variables
 ```bash
-export PS1='$(if [ -n "$CONDA_DEFAULT_ENV" ]; then echo -n "(\[\e[1;33m\]$CONDA_DEFAULT_ENV\[\e[0m\]) "; fi)\[\e[1;32m\]\u@\h\[\e[0m\]:\[\e[1;34m\]\w\[\e[0m\]\n$ '
+cp .env.example .env
 ```
+set your environment variables inside .env with yours
