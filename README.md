@@ -1,4 +1,4 @@
-# Mini-RAG
+# Mini-RAG-App
 
 A lightweight **Retrieval-Augmented Generation (RAG)** pipeline built with Python.
 This project demonstrates how to combine **embeddings**, **vector search**, and a **Large Language Model (LLM)** to answer questions based on your own documents.
