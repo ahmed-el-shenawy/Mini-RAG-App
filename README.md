@@ -17,7 +17,7 @@ This project demonstrates how to combine **embeddings**, **vector search**, and 
 
 ## 📋 Requirements
 - **Python 3.12.3**
-- Recommended: [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
+- **Miniconda**
 
 ---
 
@@ -31,6 +31,11 @@ bash Miniconda3-latest-Linux-x86_64.sh
 source ~/.bashrc
 
 ```
+### 💻 Windows users
+- First install WSL → [Microsoft guide](https://learn.microsoft.com/en-us/windows/wsl/install)
+- Then install Miniconda inside WSL using the Linux instructions above.
+- 🎥 Helpful video: [Install Miniconda on Windows with WSL](https://www.youtube.com/watch?v=ujKNOYKi88A)
+
 ### 2. Create a conda environment
 ```bash
 
