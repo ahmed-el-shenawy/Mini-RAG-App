@@ -56,3 +56,11 @@ pip install -r requirements.txt
 cp .env.example .env
 ```
 set your environment variables inside .env with yours
+
+---
+## Run the fastapi Server
+```bash
+uvicorn main:app --reload --host 0.0.0.0 --port 5000
+```
+## Postman Collection
+download the postman collection form [/assets/postman.json](/assets/postman.json)

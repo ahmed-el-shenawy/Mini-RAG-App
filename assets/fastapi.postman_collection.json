@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "4a0e5593-de7f-4122-9bd3-f6fa02897e05",
+		"name": "fastapi",
+		"description": "just testin the fast api apis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47470298"
+	},
+	"item": [
+		{
+			"name": "hello get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "api",
+			"value": "localhost:8000",
+			"type": "string"
+		},
+		{
+			"key": "f",
+			"value": "localhost:5000",
+			"type": "string"
+		}
+	]
+}
