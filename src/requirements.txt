@@ -1,3 +1,10 @@
 fastapi[standard]==0.116.2
 pydantic-settings==2.10.1
 lru_cache==0.2.3
+aiofiles==24.1.0
+langchain==0.3.27
+langchain-community==0.3.29
+PyMuPDF==1.26.4
+motor==3.7.1
+openai==1.109.1
+cohere==5.18.0

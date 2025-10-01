@@ -57,6 +57,12 @@ cp .env.example .env
 ```
 set your environment variables inside .env with yours
 
+### 6. Docker compose services
+```bash
+cd docker
+cp .env.example .env
+```
+
 ---
 ## Run the fastapi Server
 ```bash
