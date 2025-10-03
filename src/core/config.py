@@ -32,6 +32,10 @@ class Settings(BaseSettings):
     DEFAULT_OUTPUT_MAX_TOKENS:int
     OPENAI_TEMPERATURE:float
 
+    VECTOR_DB_BACKEND:str
+    VECTOR_DB_METRIC:str
+    QDRANT_DB_PATH:str
+
 @lru_cache
 def get_settings() -> Settings:
     return Settings() # type: ignore

@@ -16,6 +16,14 @@ class BaseController:
         )
         self.files_path: str = os.path.join(self.src_path, "assets", "files")
 
+        self.db_paht: str = os.path.join(self.src_path, "assets", "database")
+
+    def get_db_path(self,db:str) -> str:
+        db_path = os.path.join(self.db_paht,db)
+        if not os.path.exists(db_path):
+            os.makedirs(db_path, exist_ok=True)
+        return db_path
+
     # Generate a random string
     def generate_random_string(self, length=12):
         """Generate a random string of fixed length."""
